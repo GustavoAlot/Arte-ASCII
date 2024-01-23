@@ -1,0 +1,20 @@
+Conversor de Imagem PGM para Caracteres ASCII
+Este é um script Python que converte uma imagem no formato PGM para uma imagem formada por caracteres ASCII, para exibi-las em consoles de texto.
+
+Instalação
+Para usar este script, você precisa ter o Python ou Python 3 instalado e bibliotecas matplotlib e numpy. Você pode instalá-las usando o gerenciador de pacotes pip:
+pip install matplotlib numpy
+
+Uso
+Para usar o script, execute o seguinte comando em um terminal:
+
+python <nome_do_arquivo.py> <nome_da_imagem.pgm> <ncolunas> <nlinhas> <"caracteres">
+python ascii.py cao.pgm 100 30 "@$#*%o!=+;:~-,. "
+(Caso use python 3, é só substituir python por python3)
+
+Onde:
+nome_da_imagem.pgm é o caminho para a imagem PGM que você deseja converter.
+<nlinhas> é a altura (em caracteres) da imagem de saída.
+<ncolunas> é a largura (em caracteres) da imagem de saída.
+"caracteres" é uma string contendo os caracteres que serão usados ​​para representar os diferentes níveis de cinza da imagem. Por exemplo, você pode usar "@#*o^." para representar diferentes tons de cinza.
+O script salvará a imagem de saída em um arquivo chamado result.txt.
